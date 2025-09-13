@@ -1,0 +1,54 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual env
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Pacchetti e dipendenze
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Log e cache
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# ---- PyCharm ----
+# Project settings (puoi tenere .idea se vuoi condividere impostazioni base)
+.idea/*
+!.idea/codeStyles/  # mantieni convenzioni di stile se vuoi
+!.idea/runConfigurations/  # mantieni configurazioni di run se servono
+*.iml
+
+# ---- Altro ----
+.DS_Store
+Thumbs.db

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js Blackjack</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/blackjack.png" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+    
+    <section class="result-section">
+      <h2 class="result js-result"></h2>
+    </section>
+
+    <div class="game-info">
+      <section class="data-section">
+
+        <h2 class="data js-data">GAME INFO</h2>
+        <h2>Deck</h2>
+
+        <div class="line-info">
+          <h4>Decks:</h4>
+          <div class="js-decks-num">
+            <p style="margin: 0;">-</p>
+          </div>
+        </div>
+
+        <div class="line-info">
+          <h4>Sabot:</h4>
+          <div class="js-remaining-cards">
+            <p>-</p>
+          </div>
+        </div>
+
+        <div class="line-info">
+          <h4>Tray:</h4>
+          <div class="js-discard-pile-cards">
+            <p>-</p>
+          </div>
+        </div>
+
+        <div class="line-info">
+          <h4>Cut card:</h4>
+          <div class="js-cut-pos">
+            <p>-</p>
+          </div>
+        </div>
+
+        <h2>Player</h2>
+        <div class="line-info">
+          <h4>Total Gain:</h4>
+          <div class="js-total-gain">
+            <p>-</p>
+          </div>
+        </div>
+
+        <div class="line-info">
+          <h4>Last Hand Gain:</h4>
+          <div class="js-last-hand-gain">
+            <p>-</p>
+          </div>
+        </div>
+
+        <div class="line-info">
+          <h4>Bankroll:</h4>
+          <div class="js-bankroll">
+            <p>-</p>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="bet-section">
+        <h2 class="data js-data">BET</h2>
+          <div class="bet js-bet">
+            <p>-</p>
+          </div>
+      </section>
+
+      <div class="table-minimum">Table minimum: <span class="js-table-minimum"></span> bu</div>
+    </div>
+
+    <section class="dealer-section">
+      <h2 class="name-header">Dealer <span class="dealer-score js-dealer-score"></span></h2>
+
+      <div class="dealer-cards js-dealer-cards">
+      </div>
+
+    </section>
+
+    <section class="player-section">
+
+      <div class="player-hands js-player-hands">
+
+        <div class="player-hand js-player-hand-0">
+          <h2 class="name-header js-name-header-0">Player <span class="player-score js-player-score-0"></span></h2>
+
+          <div class="player-cards js-player-cards-0">
+          </div>
+        </div>
+
+        <div class="player-hand js-player-hand-1">
+          <h2 class="name-header js-name-header-1">Player <span class="player-score js-player-score-1"></span></h2>
+
+          <div class="player-cards js-player-cards-1">
+          </div>
+        </div>
+
+        <div class="player-hand js-player-hand-2">
+          <h2 class="name-header js-name-header-2">Player <span class="player-score js-player-score-2"></span></h2>
+
+          <div class="player-cards js-player-cards-2">
+          </div>
+        </div>
+
+        <div class="player-hand js-player-hand-3">
+          <h2 class="name-header js-name-header-3">Player <span class="player-score js-player-score-3"></span></h2>
+
+          <div class="player-cards js-player-cards-3">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="player-buttons">
+        <div>
+          <button class="strategy-button js-strategy-button">Strategy</button>
+
+          <button class="hit-button js-hit-button">Hit</button>
+
+          <button class="stand-button js-stand-button">Stand</button>
+
+          <button class="double-button js-double-button">Double</button>
+
+          <button class="split-button js-split-button">Split</button>
+
+          <button class="play-button js-play-button">Deal
+            <img src="images/play-button-img.png" alt="Play button", class="bet-button-img">
+          </button>
+
+          <button class="bet-button js-bet1-button">x0
+            <img src="images/chips/chipBlackWhite.png" alt="Bet button" class="bet-button-img">
+          </button>
+
+          <button class="bet-button js-bet2-button">x0
+            <img src="images/chips/chipBlueWhite.png" alt="Bet button" class="bet-button-img">
+          </button>
+
+          <button class="bet-button js-bet3-button">x0
+            <img src="images/chips/chipGreenWhite.png" alt="Bet button" class="bet-button-img">
+          </button>
+
+          <button class="bet-button js-bet4-button">x0
+            <img src="images/chips/chipRedWhite.png" alt="Bet button" class="bet-button-img">
+          </button>
+        </div>
+
+        <div>
+          <button class="new-game-button js-new-game-button">&#10148; New Deal</button>
+        </div> 
+      </div>
+    </section>
+
+    <div class="strategy hidden js-strategy-div">
+      <img src="./images/blackjack-strategy.png" alt="blackjack-strategy-image">
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

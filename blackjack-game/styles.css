@@ -1,0 +1,271 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(22 101 52);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFCC00;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  color: antiquewhite;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.dealer-cards, .player-cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center
+}
+
+.card-back {
+  border-radius: 10px;
+}
+
+.playing-card {
+  height: 200px;
+  width: 150px;
+}
+
+.name-header {
+  margin: 1rem 0 1rem;
+  font-size: 32px;
+}
+
+.result-section {
+  margin: 1rem 0;
+}
+
+.game-info {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+.data-section {
+  height: 24rem;
+  width: 15rem;
+  background-color: rgb(17 24 39);
+  border-radius: 0.5rem;
+}
+
+.bet-section {
+  margin-top: 1rem;
+  height: 8rem;
+  width: 15rem;
+  background-color: rgb(17 24 39);
+  border-radius: 0.5rem;
+}
+
+.result {
+  font-size: 4rem;
+  animation: pulse 1s infinite;
+}
+
+.data {
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: bolder;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(19, 19, 19);
+  color: antiquewhite;
+  height: 2.7rem;
+}
+
+.player-buttons {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+button{
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(17 24 39);;
+  color: gold;
+  font-weight: 700;
+  height: 2.5rem;
+}
+
+.bet-button, .play-button {
+  height: 5rem;
+}
+
+.bet-button:hover, .play-button:hover {
+  height: 5.2rem;
+}
+
+.new-game-button {
+  margin-top: 0rem;
+  font-size: 1.5rem;
+}
+
+.strategy{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+
+/* .hit-button {
+  margin-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+} */
+
+.hidden {
+  display: none;
+}
+
+.player-score, .dealer-score {
+    padding-top: 5rem;
+    color: #FFCC00;
+    font-weight: 1000;
+}
+
+.bet-button-img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+p {
+  color: white;
+}
+
+.line-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0.1rem;
+}
+
+.new-game-button {
+  height: 3.2rem;
+}
+
+.new-game-button:hover {
+  height: 3.2rem;
+}
+
+.bet {
+  font-size: 1.5rem;
+}
+
+.player-hand {
+  /* display: inline-block; */
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+
+.js-name-header-0 {
+  display: none;
+}
+
+.js-player-cards-0 {
+  display: none;
+}
+
+.js-name-header-1 {
+  display: none;
+}
+
+.js-player-cards-1 {
+  display: none;
+}
+
+.js-name-header-2 {
+  display: none;
+}
+
+.js-player-cards-2 {
+  display: none;
+}
+
+.js-name-header-3 {
+  display: none;
+}
+
+.js-player-cards-3 {
+  display: none;
+}
+
+.table-minimum, .js-table-minimum {
+  color: #E52020;
+  font-weight: 780;
+  font-size: 1.3rem;
+  background-color: rgb(17 24 39);
+  border-radius: 0.5rem;
+}
+
+.table-minimum {
+  margin-top: 1rem;
+  text-align: center;
+}

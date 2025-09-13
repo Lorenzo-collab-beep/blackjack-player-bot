@@ -1,0 +1,4 @@
+Starting Bankroll: 1000
+Total Earn: 161.0
+Hands: 392
+Cards: 2128
